@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LotR Custom Hero</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    @font-face {
+        font-family: "Vafthrudnir";
+        src: url("./fonts/Vafthrudnir.ttf");
+        }
+    @import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+    </style>
+</head>
+<body>
+  <main>
+        <header class="title">Generate your custom LotR Hero!</header>
+        <label class="card-type-selector-label">I WANT TO BUILD A
+            <select id="card-type">
+                <option value="neutral">Neutral</option>
+                <option value="tactics">Tactics</option>
+                <option value="lore">Lore</option>
+                <option value="spirit">Spirit</option>
+                <option value="leaderhsip">Leadership</option>
+            </select>
+        HERO</label>
+        <div class="container">
+            <img id="preview" />
+            <img id="portrait" />
+            <aside id='threat-cost'>0</aside>
+                <section class='attributes'>
+                    <span id='willCard'>0</span>
+                    <span id='atkCard'>0</span>
+                    <span id='defCard'>0</span>
+                </section>
+            <aside id='health'>0</aside>
+            <!-- <canvas id ='imgCanvas' style='width: 352px;height: 500px' width="705" height="1000"></canvas> -->
+            <section class='naming-box'>
+                <span id='unique' width='19' height='21' style='bottom: 10px;'></span>
+                <span id='hero-name' style='bottom: 10px;'>name</span>
+            </section>
+            <section class='type-box'>
+                <article id='typeCard'>Type.</article>
+            </section>
+            <section class="card-text">
+                <article id='abilities-preview'></article>
+            </section>
+
+        </div>
+        <aside class="data">
+            <input id='loader' type="file" src="" accept='.jpg, .jpeg, .png'>
+            <input type="text" name="" id="input-name" placeholder="Name">
+            <input type="text" name="" id="inputType" placeholder="Type">
+            <input type="number" id='threat-input'placeholder="Threat Cost" min="0" max="99" style='width: 75px;'>
+            <input type="number" id='willpower'placeholder="Willpower" min="0" max="5" style='width: 75px;'>
+            <input type="number" id='attack'placeholder="Attack" min="0" max="5" style='width: 75px;'>
+            <input type="number" id='defense'placeholder="Defense" min="0" max="5" style='width: 75px;'>
+            <input type="number" id='health-input'placeholder="Health" min="1" max="99" style='width: 75px;'>
+            <textarea id='abilities-input' name="textarea" style="width:250px;height:100px;">Place your card text here.</textarea>
+        </aside>
+  </main>
+    <script src="script.js"></script>
+</body>
+</html>
