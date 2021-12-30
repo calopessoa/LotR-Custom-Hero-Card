@@ -121,6 +121,7 @@ aside * {
     text-align: left;
     font-size: 14px;
     line-height: 100%;
+    font-weight: 400;
 }
 
 #abilities-input {
@@ -143,6 +144,20 @@ aside * {
 #atkCard, #defCard {
     display: block;
     margin-top: 15px;
+}
+
+#flavor-preview {
+    position: relative;
+    width: 280px;
+    height: 40px;
+    margin-top: 80px;
+    margin: auto;
+    font-style: italic;
+    font-size: 12px;
+    font-family: 'Amiri', serif;
+    line-height: 100%;
+    font-weight: 400;
+    text-align: left;
 }
 
 /* .dl-btn {

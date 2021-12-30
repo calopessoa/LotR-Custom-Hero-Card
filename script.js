@@ -21,6 +21,8 @@ const typeCard = document.getElementById('typeCard');
 const textBox = document.getElementsByName('card-text');
 const abilitiesCard = document.getElementById('abilities-preview');
 const abilitiesInput = document.getElementById('abilities-input');
+const flavorCard = document.getElementById('flavor-preview');
+const flavorInput = document.getElementById('flavor-input');
 // const downloadBtn = document.getElementsByName('dl-btn');
 
 preview.style.backgroundSize = 'cover';
@@ -71,6 +73,11 @@ function cardText() {
   abilitiesCard.innerText = abilitiesInput.value;
  }
 abilitiesInput.addEventListener('keyup', cardText);
+
+function flavorText() {
+  flavorCard.innerText = flavorInput.value;
+ }
+flavorInput.addEventListener('keyup', flavorText);
 
 // Funções que imprimem os atributos principais da carta;
 function threatCost() {
