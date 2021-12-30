@@ -1,3 +1,4 @@
+
 const loader = document.getElementById('loader');
 const preview = document.getElementById('preview');
 const cardType = document.getElementById('card-type');
@@ -20,6 +21,7 @@ const typeCard = document.getElementById('typeCard');
 const textBox = document.getElementsByName('card-text');
 const abilitiesCard = document.getElementById('abilities-preview');
 const abilitiesInput = document.getElementById('abilities-input');
+// const downloadBtn = document.getElementsByName('dl-btn');
 
 preview.style.backgroundSize = 'cover';
 portrait.style.backgroundSize = 'cover';

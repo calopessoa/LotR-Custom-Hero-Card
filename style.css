@@ -25,7 +25,7 @@ header {
 
 .container {
     width: 352px;
-    height: 598px;
+    height: 500px;
     float: left;
     margin-right: 20px;
     text-align: center;
@@ -97,6 +97,10 @@ aside * {
     display: inline-block;
 }
 
+.data {
+    font-family: "Amiri";
+}
+
 .type-box {
     position: relative;
     font-family:'Times New Roman', Times, serif;
@@ -140,5 +144,14 @@ aside * {
     display: block;
     margin-top: 15px;
 }
+
+/* .dl-btn {
+    margin-top: 70px;
+    width: 100px;
+    height: 30px;
+    background-color: #121212;
+    color: white;
+    border-radius: 5px;
+} */
 
 
