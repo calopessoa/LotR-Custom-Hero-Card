@@ -23,6 +23,7 @@ const abilitiesCard = document.getElementById('abilities-preview');
 const abilitiesInput = document.getElementById('abilities-input');
 const flavorCard = document.getElementById('flavor-preview');
 const flavorInput = document.getElementById('flavor-input');
+const markItUp = document.getElementById('markItUp');
 // const downloadBtn = document.getElementsByName('dl-btn');
 
 preview.style.backgroundSize = 'cover';
@@ -70,9 +71,13 @@ function heroType() {
 typeInput.addEventListener('keyup', heroType);
 
 function cardText() {
-  abilitiesCard.innerText = abilitiesInput.value;
+  abilitiesCard.innerHTML = abilitiesInput.value;
  }
 abilitiesInput.addEventListener('keyup', cardText);
+
+//
+
+//
 
 function flavorText() {
   flavorCard.innerText = flavorInput.value;
